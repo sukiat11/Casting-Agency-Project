@@ -1,0 +1,61 @@
+## Casting Agency Web App
+
+The Casting Agency models a company that is responsible for creating movies and managing and assigning actors to those movies. You are an Executive Producer within the company and are creating a system to simplify and streamline your process.
+- Models:
+    - Movies with attributes title and release date
+    - Actors with attributes name, age and gender
+
+- Endpoints:
+    - GET /actors and /movies
+    - DELETE /actors/ and /movies/
+    - POST /actors and /movies
+    - PATCH /actors/ and /movies/
+
+- Roles:
+    - Casting Assistant
+        - Can view actors and movies
+    - Casting Director
+        - All permissions a Casting Assistant has and…
+        - Add or delete an actor from the database
+        - Modify actors or movies
+    - Executive Producer
+        - All permissions a Casting Director has and…
+        - Add or delete a movie from the database
+
+### Local Installation 
+Use python version 3.8 or greater.
+Create a virtual env and run `pip install -r requirements.txt`
+Run script:
+- `python3 app.py`
+
+
+### Endpoints
+
+GET /actors
+
+
+GET /actors/1
+
+
+GET /movies
+
+
+GET /movies/1
+
+
+DELETE /actors/1
+
+
+DELETE /movies/1
+
+
+POST /actors
+
+
+POST /movies
+
+
+PATCH /actors/1
+
+
+PATCH /movies/1
